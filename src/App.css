@@ -1,38 +1,150 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+:root{
+  --White: hsl(0, 0%, 100%);
+  --Lime: hsl(61, 70%, 52%);
+  --Red: hsl(4, 69%, 50%);
+  --Slate100: hsl(202, 86%, 94%);
+  --Slate300: hsl(203, 41%, 72%);
+  --Slate500: hsl(200, 26%, 54%);
+  --Slate700: hsl(200, 24%, 40%);
+  --Slate900: hsl(202, 55%, 16%);
+  --backgroundcolor: hsl(220, 238, 250);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.wrapper {
+  background-color: var(--Slate100);
+  width: 100%;
+  height: 100vh; /* 100% of the viewport height */
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  
 }
 
-.App-link {
-  color: #61dafb;
+.centerdualbox{
+  width: 55%;
+  height: 60%;
+  background-color: var(--White);
+  border-radius: 1rem;
+  display: grid;
+  grid-template-columns: 50% 50%;
+ 
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.resultscontainer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--Slate900);
+  border-radius: 0 1rem 1rem 6rem;
+}
+
+.leftBoxContainer{
+  padding-left: 2rem;
+  padding-right: 2rem;
+}
+.rhscalc{
+ 
+}
+.mortgagecalcdiv{
+  margin-top: 2rem;
+  width: 100%;
+  display: grid;
+  grid-template-rows: 80% 20%;
+  grid-template-columns: 80% 20% ;
+  grid-gap: 20px;
+  font-size: larger;
+  font-weight: 700;
+  color: var(--Slate900);
+  
+}
+
+.clearallbutton{
+ font-size:small;
+ color:grey;
+ color: var(--Slate700);
+ 
+}
+
+.mortgageamountdiv{
+  margin-bottom: 1rem;
+}
+
+.mortgageamountheader{
+  margin-bottom: .3rem;
+  color: var(--Slate700);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.mortgageamounttextarea{
+  width: 100%; 
+}
+
+.mortgageinfodiv{
+  margin-bottom: 1rem;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-gap: 1rem;
+}
+
+.mortagetermheader{
+  color: var(--Slate700);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.interestrateheader{
+  color: var(--Slate700);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.mortgagetypeinfodiv{
+  margin-bottom: 1rem;
+  width: 100%;
+  display: grid;
+  
+}
+
+.mortgagetypeheader{
+  margin-bottom: 1rem;
+  color: var(--Slate700);
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.mortgageAndInterestRateTextAreas{
+  width: 100%;
+  
+}
+
+.mtypebuttons{
+  height: 30px;
+  margin-bottom: 1rem;
+  width: 100%;
+  height: 40px;
+  background-color: white;
+  border-radius: .5rem;
+  font-weight: 700;
+  color: var(--Slate900);
+  justify-content: left;
+  display: flex;
+  align-items: left;
+}
+
+.calculatePaymentButtoncContainer{
+
+}
+
+.calcpaymentbutton{
+  margin-top: 1rem;
+  width: 50%;
+  height: 40px;
+  background-color: var(--Lime);
+  border-radius: 3rem;
+  border: none;
+  
 }
